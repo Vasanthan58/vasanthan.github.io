@@ -1,0 +1,820 @@
+/* appling google font over the website  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+.navbar-nav a:hover{
+    color: #fca61f;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* styling home section starts */
+.home{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange{
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.h-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.link:hover{
+    color: #6f34fe;
+}
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* adding animation to home section image  */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* expertise section starts */
+.heading small{
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.heading h3{
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.expertise h4{
+    color: #3f396d;
+    font-weight: 700;
+}
+.expertise a{
+    text-decoration: none;
+    color: #fca61f;
+}
+.expertise a:hover{
+    color: #6f34fe;
+}
+.expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* skill section starts */
+.skill{
+    background-color: rgb(234, 234, 249);
+}
+.progress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+.progress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+.circular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.heading p{
+    font-size: 1.3rem;
+}
+
+/* portfolio section starts */
+#myBtnContainer{
+    margin-bottom: 45px;
+}
+#myBtnContainer button{
+  border: none;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;   
+  display: inline-block;
+  margin: 0 25px;
+}
+#myBtnContainer button:hover{
+    color: #fca61f;
+}
+
+#myBtnContainer button:focus{
+    outline: none;
+}
+.post .content h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.post .card{
+    border: none;
+}
+
+/* testimonial section starts */
+.testimonial img:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 1s;
+}
+.testimonial h4{
+    color: #3f396d;
+}
+.testimonial i{
+    font-size: 2.9rem;
+    color: #fca61f;
+    
+}
+.testimonial .nextprev-btn{
+    border: none;
+    background-color: #fff;
+}
+.prev:hover,.prev-btn:hover{
+    color:#6f34fe;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+.next:hover,.next-btn:hover{
+    color:#6f34fe;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+
+/* blog section starts */
+.blog{
+    background-color: #f2f2ff;
+}
+.blog .blogpost .card{
+    border: none;
+    border-radius: 5%;
+}
+.nav-bg{
+    background-color: #fff;
+}
+
+.blog .blogpost small{
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+.blog .blogpost h4,.blogpost a{
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.blogpost a:hover{
+    color: #fca61f;
+}
+.blog .blogpost .read-more-btn{
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+.blog .blogpost .read-more-btn:hover{
+    color: #6f34fe;
+}
+/* styling modal group  */
+.btn-c{
+    margin-left: 94%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -3%;
+}
+.btn-c i{
+    color: #fca61f;
+}
+.modal-body .content span{
+    font-size: 1rem;
+}
+.modal-body .content small{
+    font-size: 1rem;
+    color: #6f34fe;
+}
+/* contact section starts */
+.contact{
+    background-color: #f3f3f3;
+}
+.contact-details i{
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+.contact-details p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+.contact-form .form-control{
+    padding: 10px 10px;
+    width: 80%;
+}
+
+/* footer section starts */
+footer{
+    background-color: #211e39;
+}
+
+footer .link-group a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+footer .link-group a:hover{
+    color: #fca61f;
+}
+.social-links button{
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    /* background-color: #fff; */
+    padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+    color: #f33a7e;
+}
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.social-links .dribble:hover{
+    background-color: #f33a7e;
+}
+.social-links .whatsapp{
+    /* color: #25D366; */
+}
+.social-links .whatsapp:hover{
+    background-color: #25D366;
+}
+.social-links .behance{
+    color: #255afc;
+}
+.social-links .behance:hover{
+    background-color: #255afc;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+.neon-glow {
+    width: 100%;
+    border-radius: 10px; /* Optional: For rounded corners */
+    box-shadow: 
+      0 0 10px #0ff, 
+      0 0 20px #0ff, 
+      0 0 30px #0ff, 
+      0 0 40px #00f, 
+      0 0 50px #00f, 
+      0 0 60px #00f, 
+      0 0 70px #00f; /* Multi-layer glow effect */
+  }
+  
+  /* Optional: Add a pulsing glow animation */
+  @keyframes neonGlow {
+    0% {
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    50% {
+      box-shadow: 0 0 20px #0ff, 0 0 40px #00f;
+    }
+    100% {
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+  }
+  
+  /* Apply glow effect on hover */
+  .neon-glow:hover {
+    animation: neonGlow 1.5s infinite alternate;
+  }
+  /* Default style for the text */
+.neon-text {
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: bold;
+    color: #fff; /* White text for better glow */
+    text-shadow: none; /* No glow initially */
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  /* Apply the neon glow when hovered or when user scrolls into view */
+  .neon-text:hover,
+  .neon-text.in-view {
+    text-shadow: 
+      0 0 5px #0ff, 
+      0 0 10px #0ff, 
+      0 0 20px #0ff, 
+      0 0 30px #00f, 
+      0 0 40px #00f;
+  }
+  
+  /* Animation when user scrolls to the text */
+  @keyframes neonTextGlow {
+    0% {
+      text-shadow: 0 0 5px #0ff;
+    }
+    50% {
+      text-shadow: 0 0 20px #00f;
+    }
+    100% {
+      text-shadow: 0 0 5px #0ff;
+    }
+  }
+  
+  /* Apply the animation when in view */
+  .neon-text.in-view {
+    animation: neonTextGlow 1.5s infinite alternate;
+  }
+  @keyframes textColorChange {
+    0% { color: #ff5733; }  /* Red */
+    25% { color: #33ff57; } /* Green */
+    50% { color: #3357ff; } /* Blue */
+    75% { color: #ff33a8; } /* Pink */
+    100% { color: #ff5733; } /* Back to Red */
+  }
+  
+  .animated-text {
+    font-size: 18px; /* Default font size */
+    line-height: 1.6; /* Adjust text height */
+    animation: textColorChange 10s infinite; /* Change color every 10 seconds */
+    transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out;
+  }
+  
+  .neon-glow {
+    width: 80%;  /* Adjust size (change as needed) */
+    max-width: 300px; /* Set a max size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper alignment */
+    margin: 0 auto; /* Center the image */
+  }
+  /* Social buttons container */
+.social-links {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    justify-content: center;
+}
+
+/* Social button styling */
+.social-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: floating 3s infinite ease-in-out;
+}
+
+/* Floating animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Hover effects */
+.social-btn:hover {
+    transform: scale(1.1); /* Slight increase in size */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* LinkedIn Button */
+.linkedin {
+    background-color: #0077b5;
+    color: white;
+    border-radius: 50%;
+}
+.linkedin:hover {
+    background-color: #005582;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+}
+.whatsapp:hover {
+    background-color: #1aa34a;
+}
+
+/* Instagram Button */
+.instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
+    color: white;
+    border-radius: 50%;
+}
+.instagram:hover {
+    filter: brightness(1.2);
+}
+
+/* Twitter (X) Button */
+.x-account {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(222, 219, 221);
+  color: black;
+  border-radius: 50%;
+}
+@keyframes textColorChange {
+    0% { color: #0000FF; }   /* Blue */
+    25% { color: #00008B; }  /* Dark Blue */
+    50% { color: #8A2BE2; }  /* Violet */
+    75% { color: #9400D3; }  /* Dark Violet */
+    100% { color: #FF1493; } /* Dark Pink */
+  }
+  
+  .animated-text {
+    font-size: 22px; /* Increase font size */
+    line-height: 2.2; /* Increase text height */
+    font-weight: bold; /* Make it stand out */
+    text-shadow: 2px 2px 10px rgba(255, 20, 147, 0.5); /* Subtle glow effect */
+    animation: textColorChange 32s infinite linear; /* Smooth transition */
+    transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out;
+  }
+/* Default Nav Link Styles */
+.navbar-nav .nav-link {
+    position: relative;
+    color: white; /* Default color */
+    transition: color 0.3s ease-in-out;
+    padding: 8px 15px;
+    border-radius: 50px; /* Default no border */
+  }
+  
+  /* Hover & Active Effect */
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #ff1493; /* Dark Pink */
+  }
+  
+  /* Specific Nav Items (Service, Blog, About) */
+  .navbar-nav .nav-item:nth-child(2) .nav-link, /* Service */
+  .navbar-nav .nav-item:nth-child(3) .nav-link, /* About */
+  .navbar-nav .nav-item:nth-child(5) .nav-link { /* Blog */
+    border: 2px solid #ff1493; /* Pink border */
+    border-radius: 50px; /* Round shape */
+    padding: 8px 20px; /* More padding for round effect */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Glow Effect on Hover for Service, Blog, About */
+  .navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+  .navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+  .navbar-nav .nav-item:nth-child(5) .nav-link:hover {
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.8);
+    background-color: rgba(255, 20, 147, 0.2); /* Slight background glow */
+  }
+      /* General Navbar Styling */
+.navbar-nav .nav-link {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Glow Effect on Hover */
+  .navbar-nav .nav-link:hover {
+    color: #ff1493;
+    text-shadow: 0 0 15px #ff1493, 0 0 30px #ff1493, 0 0 45px #ff1493;
+  }
+  
+  /* Underline Slide Animation */
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff1493, #7b68ee);
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Special Neon Border for Service, About, Blog */
+  .navbar-nav .nav-item:nth-child(2) .nav-link, /* Service */
+  .navbar-nav .nav-item:nth-child(3) .nav-link, /* About */
+  .navbar-nav .nav-item:nth-child(5) .nav-link { /* Blog */
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Animated Neon Glow Surround on Hover */
+  .navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+  .navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+  .navbar-nav .nav-item:nth-child(5) .nav-link:hover {
+    box-shadow: 0 0 15px #ff1493, 0 0 25px #7b68ee, 0 0 35px #ff1493;
+  }
+  
+  /* Bounce Effect on Click */
+  .navbar-nav .nav-link:active {
+    animation: bounce 0.3s ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  /* Mobile Optimization */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-nav .nav-link {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  <style>
+  /* Default glowing effect */
+  .navbar-nav .nav-link {
+    color: darkblue;
+    text-shadow: 0 0 10px darkblue;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+
+  /* Hover effect: Change color to light blue */
+  .navbar-nav .nav-link:hover {
+    color: lightblue;
+    text-shadow: 0 0 20px lightblue;
+  }
+</style>
+
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#service">Service</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#blog">Blog</a>
+    </li>
+  </ul>
+</div>
+<style>
+/* Default navbar styling */
+.navbar-nav .nav-item {
+  display: inline-block;
+}
+
+/* Rounded button effect */
+.navbar-nav .nav-link {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust for shape */
+  border-radius: 50px; /* Makes the items rounded */
+  background-color: rgba(0, 0, 139, 0.7); /* Dark blue with transparency */
+  color: white;
+  text-shadow: 0 0 10px darkblue;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect: Changes to light blue */
+.navbar-nav .nav-link:hover {
+  background-color: lightblue;
+  color: black;
+  text-shadow: 0 0 20px lightblue;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+</style>
+
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+<ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#service">Service</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#portfolio">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#blog">Blog</a>
+  </li>
+</ul>
+</div>
+/* Default navbar styling */
+.navbar-nav .nav-item {
+    display: inline-block;
+  }
+  
+  /* Rounded button effect for all links */
+  .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust for shape */
+    border-radius: 50px; /* Makes items rounded */
+    background-color: rgba(0, 0, 139, 0.7) !important; /* Dark blue */
+    color: white !important;
+    text-shadow: 0 0 10px darkblue;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect: Changes to light blue */
+  .navbar-nav .nav-link:hover {
+    background-color: lightblue !important;
+    color: black !important;
+    text-shadow: 0 0 20px lightblue;
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  .text-gradient {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+}
+
+/* Hover Effect */
+.heading:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+/* Gradient Text Effect */
+.text-gradient {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fade-in Effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Hover Effect */
+.heading:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Color Change Effect */
+.heading:hover small {
+  color: #ff7e5f;
+}
+
+.heading:hover h3 {
+  color: #feb47b;
+}
